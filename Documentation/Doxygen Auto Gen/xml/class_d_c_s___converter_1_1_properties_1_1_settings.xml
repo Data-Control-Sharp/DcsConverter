@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_d_c_s___converter_1_1_properties_1_1_settings" kind="class" language="C#" prot="package">
+    <compoundname>DCS_Converter::Properties::Settings</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ApplicationSettingsBase</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_properties_1_1_settings_1ac61708f01f2b00864d6495dfd212fd91" prot="private" static="yes" mutable="no">
+        <type>Settings</type>
+        <definition>Settings DCS_Converter.Properties.Settings.defaultInstance</definition>
+        <argsstring></argsstring>
+        <name>defaultInstance</name>
+        <initializer>= ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Properties/Settings.Designer.cs" line="18" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Properties/Settings.Designer.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_d_c_s___converter_1_1_properties_1_1_settings_1a4e0d8aa0717b5954a96a44b4e8653b75" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Settings</type>
+        <definition>Settings DCS_Converter.Properties.Settings.Default</definition>
+        <argsstring></argsstring>
+        <name>Default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Properties/Settings.Designer.cs" line="20" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Properties/Settings.Designer.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>global::SystemConfiguration::ApplicationSettingsBase</label>
+      </node>
+      <node id="28">
+        <label>DCS_Converter.Properties.Settings</label>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="31">
+        <label>global::SystemConfiguration::ApplicationSettingsBase</label>
+      </node>
+      <node id="30">
+        <label>DCS_Converter.Properties.Settings</label>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Team Project/DCS_Converter/DCS_Converter/Properties/Settings.Designer.cs" line="16" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Properties/Settings.Designer.cs" bodystart="16" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_d_c_s___converter_1_1_properties_1_1_settings_1a4e0d8aa0717b5954a96a44b4e8653b75" prot="public" virt="non-virtual"><scope>DCS_Converter::Properties::Settings</scope><name>Default</name></member>
+      <member refid="class_d_c_s___converter_1_1_properties_1_1_settings_1ac61708f01f2b00864d6495dfd212fd91" prot="private" virt="non-virtual"><scope>DCS_Converter::Properties::Settings</scope><name>defaultInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

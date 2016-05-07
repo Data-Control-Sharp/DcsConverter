@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_9ac078b5a809658ebb20f335935c1153" kind="dir">
+    <compoundname>Team Project/DCS_Converter/DCS_Converter</compoundname>
+    <innerdir refid="dir_2e0ae79b3d3f88b54267498ed3ddb4fc">Team Project/DCS_Converter/DCS_Converter/obj</innerdir>
+    <innerdir refid="dir_eb6d991b4d0f4bcc9f854e028f912cf8">Team Project/DCS_Converter/DCS_Converter/Properties</innerdir>
+    <innerfile refid="_data_table_extensions_8cs">DataTableExtensions.cs</innerfile>
+    <innerfile refid="_data_view_8cs">DataView.cs</innerfile>
+    <innerfile refid="_data_view_8_designer_8cs">DataView.Designer.cs</innerfile>
+    <innerfile refid="_d_c_s___a_l_l_8cs">DCS_ALL.cs</innerfile>
+    <innerfile refid="_d_c_s___c_s_v_8cs">DCS_CSV.cs</innerfile>
+    <innerfile refid="_d_c_s___j_s_o_n_8cs">DCS_JSON.cs</innerfile>
+    <innerfile refid="_d_c_s___x_m_l_8cs">DCS_XML.cs</innerfile>
+    <innerfile refid="_form1_8cs">Form1.cs</innerfile>
+    <innerfile refid="_form1_8_designer_8cs">Form1.Designer.cs</innerfile>
+    <innerfile refid="_j_object_extensions_8cs">JObjectExtensions.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Team Project/DCS_Converter/DCS_Converter/"/>
+  </compounddef>
+</doxygen>

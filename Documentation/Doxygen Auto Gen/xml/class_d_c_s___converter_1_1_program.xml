@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_d_c_s___converter_1_1_program" kind="class" language="C#" prot="public">
+    <compoundname>DCS_Converter::Program</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_program_1a084c0c9a28a4320f3deb078cbf4a199f" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DCS_Converter.Program.ATTACH_PARENT_PROCESS</definition>
+        <argsstring></argsstring>
+        <name>ATTACH_PARENT_PROCESS</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Program.cs" line="15" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Program.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_program_1aee2c35a4dc4d546741d51af167fdb077" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool DCS_Converter.Program.AttachConsole</definition>
+        <argsstring>(int dwProcessId)</argsstring>
+        <name>AttachConsole</name>
+        <param>
+          <type>int</type>
+          <declname>dwProcessId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Program.cs" line="14" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_program_1aa4a88bdedaba3e1aa12508a569065762" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void DCS_Converter.Program.Main</definition>
+        <argsstring>(string[] args)</argsstring>
+        <name>Main</name>
+        <param>
+          <type>string[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>The main entry point for the application. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Program.cs" line="21" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Program.cs" bodystart="21" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Team Project/DCS_Converter/DCS_Converter/Program.cs" line="11" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Program.cs" bodystart="10" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_d_c_s___converter_1_1_program_1a084c0c9a28a4320f3deb078cbf4a199f" prot="private" virt="non-virtual"><scope>DCS_Converter::Program</scope><name>ATTACH_PARENT_PROCESS</name></member>
+      <member refid="class_d_c_s___converter_1_1_program_1aee2c35a4dc4d546741d51af167fdb077" prot="private" virt="non-virtual"><scope>DCS_Converter::Program</scope><name>AttachConsole</name></member>
+      <member refid="class_d_c_s___converter_1_1_program_1aa4a88bdedaba3e1aa12508a569065762" prot="private" virt="non-virtual"><scope>DCS_Converter::Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

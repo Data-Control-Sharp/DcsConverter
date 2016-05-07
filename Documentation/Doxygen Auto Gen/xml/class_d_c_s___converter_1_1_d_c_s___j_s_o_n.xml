@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_d_c_s___converter_1_1_d_c_s___j_s_o_n" kind="class" language="C#" prot="public">
+    <compoundname>DCS_Converter::DCS_JSON</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_d_c_s___j_s_o_n_1aeda5915a0b4cfc3319ece0cb3bface36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>dynamic</type>
+        <definition>dynamic DCS_Converter.DCS_JSON.parseJSON</definition>
+        <argsstring>(String filePath)</argsstring>
+        <name>parseJSON</name>
+        <param>
+          <type>String</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Reads a JSON file and parses it to a dynamic object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The FULL path of the JSON file to convert.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A dynamic object, representing the JSON file.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/DCS_JSON.cs" line="26" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/DCS_JSON.cs" bodystart="26" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_d_c_s___j_s_o_n_1a88b5eca326c55d554bc1d62cde2725ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DCS_Converter.DCS_JSON.outputJSON</definition>
+        <argsstring>(dynamic obj, string filePath)</argsstring>
+        <name>outputJSON</name>
+        <param>
+          <type>dynamic</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Writes a C# object to a JSON file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to write to file.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The FULL path of the file to write.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/DCS_JSON.cs" line="45" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/DCS_JSON.cs" bodystart="45" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is used for all JSON related conversion within <computeroutput><ref refid="namespace_d_c_s___converter" kindref="compound">DCS_Converter</ref></computeroutput> </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Team Project/DCS_Converter/DCS_Converter/DCS_JSON.cs" line="18" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/DCS_JSON.cs" bodystart="17" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_d_c_s___converter_1_1_d_c_s___j_s_o_n_1a88b5eca326c55d554bc1d62cde2725ec" prot="public" virt="non-virtual"><scope>DCS_Converter::DCS_JSON</scope><name>outputJSON</name></member>
+      <member refid="class_d_c_s___converter_1_1_d_c_s___j_s_o_n_1aeda5915a0b4cfc3319ece0cb3bface36" prot="public" virt="non-virtual"><scope>DCS_Converter::DCS_JSON</scope><name>parseJSON</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

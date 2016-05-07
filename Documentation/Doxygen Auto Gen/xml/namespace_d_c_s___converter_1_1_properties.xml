@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_d_c_s___converter_1_1_properties" kind="namespace" language="C#">
+    <compoundname>DCS_Converter::Properties</compoundname>
+    <innerclass refid="class_d_c_s___converter_1_1_properties_1_1_resources" prot="package">DCS_Converter::Properties::Resources</innerclass>
+    <innerclass refid="class_d_c_s___converter_1_1_properties_1_1_settings" prot="package">DCS_Converter::Properties::Settings</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Team Project/DCS_Converter/DCS_Converter/Properties/Resources.Designer.cs" line="11" column="1"/>
+  </compounddef>
+</doxygen>

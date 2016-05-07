@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_d_c_s___converter_1_1_form1" kind="class" language="C#" prot="public">
+    <compoundname>DCS_Converter::Form1</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a7d770b4c7b728090990877f2aa14a526" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string DCS_Converter.Form1.openFileDialogFilter</definition>
+        <argsstring></argsstring>
+        <name>openFileDialogFilter</name>
+        <initializer>= &quot;All files (*.*)|*.*|CSV File (.csv)|*.csv|JSON File (.json)|*.json|XML File (.xml)|*.xml&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.cs" line="19" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1adf76dd52671d9f24f683cab4868d6579" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer DCS_Converter.Form1.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="8" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a076a521b1f6d679f3ce1a11d1db17b54" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button DCS_Converter.Form1.button1</definition>
+        <argsstring></argsstring>
+        <name>button1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="228" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a1d7660e0339035cbf4f255c7501fd59f" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.OpenFileDialog</type>
+        <definition>System.Windows.Forms.OpenFileDialog DCS_Converter.Form1.openFileDialog1</definition>
+        <argsstring></argsstring>
+        <name>openFileDialog1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="229" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a7431acf9c547f71c2e4c7374da5ab88c" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label DCS_Converter.Form1.label1</definition>
+        <argsstring></argsstring>
+        <name>label1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="230" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a1196dae8cd23b08babe5b85cb95eb1a9" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ComboBox</type>
+        <definition>System.Windows.Forms.ComboBox DCS_Converter.Form1.comboBox1</definition>
+        <argsstring></argsstring>
+        <name>comboBox1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="231" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a42d8076aedad670baf348718999828ce" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label DCS_Converter.Form1.label2</definition>
+        <argsstring></argsstring>
+        <name>label2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="232" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a4d2b7009d1f3e584935778047b9983b5" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button DCS_Converter.Form1.button2</definition>
+        <argsstring></argsstring>
+        <name>button2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="233" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1af78389adfca077dbb93d035c65ae1e99" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel DCS_Converter.Form1.panel1</definition>
+        <argsstring></argsstring>
+        <name>panel1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="234" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1ae8ea47a5dd5679d95ada261d9ee38e39" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.CheckBox</type>
+        <definition>System.Windows.Forms.CheckBox DCS_Converter.Form1.checkBox3</definition>
+        <argsstring></argsstring>
+        <name>checkBox3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="235" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a3f6d9d95d1af9f0a59f4deb7d8881d48" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.CheckBox</type>
+        <definition>System.Windows.Forms.CheckBox DCS_Converter.Form1.checkBox2</definition>
+        <argsstring></argsstring>
+        <name>checkBox2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="236" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a467383645c534d8963b3880bf3ee4568" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.CheckBox</type>
+        <definition>System.Windows.Forms.CheckBox DCS_Converter.Form1.checkBox1</definition>
+        <argsstring></argsstring>
+        <name>checkBox1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="237" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a9c877c67a1307d6caf8c7439e861c780" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label DCS_Converter.Form1.label3</definition>
+        <argsstring></argsstring>
+        <name>label3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="238" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a3b13dfd523a1befaf49c3e1f1250a656" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.SaveFileDialog</type>
+        <definition>System.Windows.Forms.SaveFileDialog DCS_Converter.Form1.saveFileDialog1</definition>
+        <argsstring></argsstring>
+        <name>saveFileDialog1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="239" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a01223689ec6b8dc6a974669e9a2adf6b" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ErrorProvider</type>
+        <definition>System.Windows.Forms.ErrorProvider DCS_Converter.Form1.errorProvider1</definition>
+        <argsstring></argsstring>
+        <name>errorProvider1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="240" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a83fbccdf630ce8f1c0f55902d6e10463" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ErrorProvider</type>
+        <definition>System.Windows.Forms.ErrorProvider DCS_Converter.Form1.errorProvider2</definition>
+        <argsstring></argsstring>
+        <name>errorProvider2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="241" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1aee38b548440bcbd8392f4a27cfa2765b" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label DCS_Converter.Form1.label4</definition>
+        <argsstring></argsstring>
+        <name>label4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="242" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a8955fbba6c89bedf037e61116891bbc5" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel DCS_Converter.Form1.panel2</definition>
+        <argsstring></argsstring>
+        <name>panel2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="244" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_d_c_s___converter_1_1_form1_1a4917f9cecc0472c84552bbf9afaa370b" prot="public" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox DCS_Converter.Form1.textBox1</definition>
+        <argsstring></argsstring>
+        <name>textBox1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="243" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_form1_1afae5f6a40eb8dbc0e481e8aa6a429d46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DCS_Converter.Form1.Form1</definition>
+        <argsstring>(string[] args)</argsstring>
+        <name>Form1</name>
+        <param>
+          <type>string[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the form and assigns any default values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.cs" line="24" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.cs" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_form1_1a44b7988c9073472efe9ea2db3e83d20d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string DCS_Converter.Form1.fileBrowser</definition>
+        <argsstring>()</argsstring>
+        <name>fileBrowser</name>
+        <briefdescription>
+<para>This function displays a file browser to the user, allowing them to select a file. The file name is then placed in textBox1. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>File name of the selected file.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.cs" line="130" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.cs" bodystart="130" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_form1_1a566ca85fb3b4e73b8a04e432eea4e689" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string DCS_Converter.Form1.saveBrowser</definition>
+        <argsstring>()</argsstring>
+        <name>saveBrowser</name>
+        <briefdescription>
+<para>This function displays a file save browser to the user, allowing them to select a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>File name of the selected file.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.cs" line="147" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.cs" bodystart="147" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_form1_1aeb4b6fbc1cf82f00cf88f6e994245195" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DCS_Converter.Form1.button1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>button1_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Responds to any action on button1, the &quot;Browse&quot; button. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains information about the event initiator.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains event data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.cs" line="37" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_form1_1a9e6f719bfd883acca42b3b3324be762f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DCS_Converter.Form1.button2_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>button2_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Responds to any action on button2, the &quot;Convert&quot; button. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains information about the event initiator.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains event data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.cs" line="47" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.cs" bodystart="47" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_form1_1a1447783ef0eff19d88d7eca9763c62e4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DCS_Converter.Form1.Form1_Load</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Form1_Load</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Actions that occur before the form is loaded. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.cs" line="165" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.cs" bodystart="165" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_form1_1a371d77aaf937220e5f490d9996adb341" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DCS_Converter.Form1.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="29" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="29" bodyend="224"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_d_c_s___converter_1_1_form1_1acb4352e23589b1f35bffe3559e0193af" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void DCS_Converter.Form1.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" line="14" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="18">
+        <label>Form</label>
+      </node>
+      <node id="17">
+        <label>DCS_Converter.Form1</label>
+        <link refid="class_d_c_s___converter_1_1_form1"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>Form</label>
+      </node>
+      <node id="21">
+        <label>System</label>
+      </node>
+      <node id="19">
+        <label>DCS_Converter.Form1</label>
+        <link refid="class_d_c_s___converter_1_1_form1"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>textBox1</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Team Project/DCS_Converter/DCS_Converter/Form1.cs" line="18" column="1" bodyfile="Team Project/DCS_Converter/DCS_Converter/Form1.cs" bodystart="17" bodyend="171"/>
+    <listofallmembers>
+      <member refid="class_d_c_s___converter_1_1_form1_1a076a521b1f6d679f3ce1a11d1db17b54" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>button1</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1aeb4b6fbc1cf82f00cf88f6e994245195" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>button1_Click</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a4d2b7009d1f3e584935778047b9983b5" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>button2</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a9e6f719bfd883acca42b3b3324be762f" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>button2_Click</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a467383645c534d8963b3880bf3ee4568" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>checkBox1</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a3f6d9d95d1af9f0a59f4deb7d8881d48" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>checkBox2</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1ae8ea47a5dd5679d95ada261d9ee38e39" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>checkBox3</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a1196dae8cd23b08babe5b85cb95eb1a9" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>comboBox1</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1adf76dd52671d9f24f683cab4868d6579" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>components</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1acb4352e23589b1f35bffe3559e0193af" prot="protected" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>Dispose</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a01223689ec6b8dc6a974669e9a2adf6b" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>errorProvider1</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a83fbccdf630ce8f1c0f55902d6e10463" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>errorProvider2</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a44b7988c9073472efe9ea2db3e83d20d" prot="public" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>fileBrowser</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1afae5f6a40eb8dbc0e481e8aa6a429d46" prot="public" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>Form1</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a1447783ef0eff19d88d7eca9763c62e4" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>Form1_Load</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a371d77aaf937220e5f490d9996adb341" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>InitializeComponent</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a7431acf9c547f71c2e4c7374da5ab88c" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>label1</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a42d8076aedad670baf348718999828ce" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>label2</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a9c877c67a1307d6caf8c7439e861c780" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>label3</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1aee38b548440bcbd8392f4a27cfa2765b" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>label4</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a1d7660e0339035cbf4f255c7501fd59f" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>openFileDialog1</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a7d770b4c7b728090990877f2aa14a526" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>openFileDialogFilter</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1af78389adfca077dbb93d035c65ae1e99" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>panel1</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a8955fbba6c89bedf037e61116891bbc5" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>panel2</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a566ca85fb3b4e73b8a04e432eea4e689" prot="public" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>saveBrowser</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a3b13dfd523a1befaf49c3e1f1250a656" prot="private" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>saveFileDialog1</name></member>
+      <member refid="class_d_c_s___converter_1_1_form1_1a4917f9cecc0472c84552bbf9afaa370b" prot="public" virt="non-virtual"><scope>DCS_Converter::Form1</scope><name>textBox1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

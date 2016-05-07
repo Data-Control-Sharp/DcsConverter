@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_2e0ae79b3d3f88b54267498ed3ddb4fc" kind="dir">
+    <compoundname>Team Project/DCS_Converter/DCS_Converter/obj</compoundname>
+    <innerdir refid="dir_18b3b4ab607521b4671fb3223c66e7f0">Team Project/DCS_Converter/DCS_Converter/obj/Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Team Project/DCS_Converter/DCS_Converter/obj/"/>
+  </compounddef>
+</doxygen>

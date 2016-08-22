@@ -99,10 +99,10 @@
     <Compile Include="DataView.Designer.cs">
       <DependentUpon>DataView.cs</DependentUpon>
     </Compile>
-    <Compile Include="DCS_ALL.cs" />
-    <Compile Include="DCS_CSV.cs" />
-    <Compile Include="DCS_JSON.cs" />
-    <Compile Include="DCS_XML.cs" />
+    <Compile Include="DcsAll.cs" />
+    <Compile Include="DcsCsv.cs" />
+    <Compile Include="DcsJson.cs" />
+    <Compile Include="DcsXml.cs" />
     <Compile Include="DataTableExtensions.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

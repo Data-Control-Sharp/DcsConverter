@@ -9,7 +9,7 @@ namespace DCS_Converter
 {
     public static class DataTableExtensions
     {
-        public static string ToCSV(this DataTable table, string delimator)
+        public static string ToCsv(this DataTable table, string delimator)
         {
             var result = new StringBuilder();
             for (int i = 0; i < table.Columns.Count; i++)

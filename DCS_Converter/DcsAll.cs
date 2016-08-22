@@ -13,14 +13,14 @@ namespace DCS_Converter
     /// <summary>
     /// This class performs actions that involve DCS_CSV, DCS_JSON, and DCS_XML
     /// </summary>
-    public class DCS_ALL
+    public class DcsAll
     {
         /// <summary>
         /// This function will parse a data file.
         /// </summary>
         /// <param name="fileName">The full file  name of the file to parse.</param>
         /// <returns>Dynamic parsed object.</returns>
-        public static dynamic parseFile(string fileName)
+        public static dynamic ParseFile(string fileName)
         {
 
             string fileType = null;
@@ -32,15 +32,15 @@ namespace DCS_Converter
             dynamic parsed = null;
             if (fileType.ToUpper() == "CSV")
             {
-                parsed = DCS_CSV.parseCSV(fileName);
+                parsed = DcsCsv.ParseCsv(fileName);
             }
             else if (fileType.ToUpper() == "JSON")
             {
-                parsed = DCS_JSON.parseJSON(fileName);
+                parsed = DcsJson.ParseJson(fileName);
             }
             else if (fileType.ToUpper() == "XML")
             {
-                parsed = DCS_XML.parseXML(fileName);
+                parsed = DcsXml.ParseXml(fileName);
             }
             else
             {
@@ -56,7 +56,7 @@ namespace DCS_Converter
         /// <param name="saveFileName">The full path of the new save file.</param>
         /// <param name="fileType">The file type of the new save file.</param>
         /// <param name="parsed">The parsed content to be output to file.</param>
-        public static bool outputFile(string saveFileName, dynamic parsed)
+        public static bool OutputFile(string saveFileName, dynamic parsed)
         {
 
             string fileType = null;
@@ -75,7 +75,7 @@ namespace DCS_Converter
             {
                 if (saveFileName != null)
                 {
-                    bool result = DCS_CSV.outputCSV(parsed, saveFileName);
+                    bool result = DcsCsv.OutputCsv(parsed, saveFileName);
                     return result;
                 }
                 else
@@ -88,7 +88,7 @@ namespace DCS_Converter
             {
                 if (saveFileName != null)
                 {
-                    bool result = DCS_JSON.outputJSON(parsed, saveFileName);
+                    bool result = DcsJson.OutputJson(parsed, saveFileName);
                     return result;
                 }
                 else
@@ -101,7 +101,7 @@ namespace DCS_Converter
             {
                 if (saveFileName != null)
                 {
-                    bool result = DCS_XML.outputXML(parsed, saveFileName);
+                    bool result = DcsXml.OutputXml(parsed, saveFileName);
                     return result;
                 }
                 else
@@ -118,7 +118,7 @@ namespace DCS_Converter
         }
 
         //TODO: Include all tables. This is an issue for CSV testing.
-        public static DataTable objToDataTable(dynamic obj)
+        public static DataTable ObjToDataTable(dynamic obj)
         {
             string json = JsonConvert.SerializeObject(obj);//TODO woefully inefficient step here. Converting back to XML to use their convenient methods.  See if we can rework in Newtonsoft.
 

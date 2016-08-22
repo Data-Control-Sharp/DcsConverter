@@ -15,7 +15,7 @@ namespace DCS_Converter
     /// <summary>
     /// This class is used for all XML related conversion within <c>DCS_Converter</c>
     /// </summary>
-    public class DCS_XML
+    public class DcsXml
     {
         //TODO test thoroughly
 
@@ -24,7 +24,7 @@ namespace DCS_Converter
         /// </summary>
         /// <param name="filePath">The FULL path of the file to convert.</param>
         /// <returns>A dynamic object, representing the XML file.</returns>
-        public static dynamic parseXML(String filePath)
+        public static dynamic ParseXml(String filePath)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace DCS_Converter
         /// </summary>
         /// <param name="filePath">The XML string</param>
         /// <returns>A dynamic object, representing the XML file.</returns>
-        public static dynamic parseXMLData(String xmlContent)
+        public static dynamic ParseXmlData(String xmlContent)
         {
             try
             {
@@ -93,7 +93,7 @@ namespace DCS_Converter
         /// <param name="stripIndent">Boolean option to strip indentation whitespace in the file.  False by default</param>
         /// <param name="stripNewline">Boolean option to strip newline whitespace in the file.  False by default</param>
         /// <param name="stripDeclaration">Boolean option to strip the xml declaration header in the file.  True by default</param>
-        public static bool outputXML(dynamic obj, string filePath, string rootNode = "ROOT", bool stripIndent = false, bool stripNewline = false, bool stripDeclaration = true)
+        public static bool OutputXml(dynamic obj, string filePath, string rootNode = "ROOT", bool stripIndent = false, bool stripNewline = false, bool stripDeclaration = true)
         {
             try {
                 //Once again I go through the JSON converter

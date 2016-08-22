@@ -15,7 +15,7 @@ namespace DCS_Converter
     /// <summary>
     /// This class will perform all operations related to CSV files.
     /// </summary>
-    public class DCS_CSV
+    public class DcsCsv
     {
         /// <summary>
         /// Reads a JSON file and parses it to a dynamic object.
@@ -24,7 +24,7 @@ namespace DCS_Converter
         /// <returns>A dynamic object, representing the CSV file.
         /// A row from the dynamic object is obtained by calling "rowxcoly" where "x" 
         /// is the number of the row starting at 0 and y is the number of the column starting at 0.</returns>
-        public static dynamic parseCSV(string fileName)
+        public static dynamic ParseCsv(string fileName)
         {
             //TODO: Create more specific try/catch blocks.
             try {
@@ -119,7 +119,7 @@ namespace DCS_Converter
         /// </summary>
         /// <param name="obj">The object to write to file.</param>
         /// <param name="filePath">The FULL path of the file to write.</param>
-        public static bool outputCSV(dynamic obj, string filePath, bool header = true, string delimeter = ",", string encoding = "UTF8")
+        public static bool OutputCsv(dynamic obj, string filePath, bool header = true, string delimeter = ",", string encoding = "UTF8")
         {
             //Recursive parsing test
             //http://www.codeproject.com/Tips/565920/Create-CSV-from-JSON-in-Csharp]
@@ -151,7 +151,7 @@ namespace DCS_Converter
                 //Load Dataset with Xml
                 dataSet.ReadXml(xmlReader);
                 //return single table inside of dataset
-                string csv = dataSet.Tables[0].ToMyCSV(delimeter, header);
+                string csv = dataSet.Tables[0].ToMyCsv(delimeter, header);
 
                 FileStream fs = null;
                 StreamWriter sw = null;
@@ -207,7 +207,7 @@ namespace DCS_Converter
         /// <param name="table">data table</param>
         /// <param name="delimiter">delimiter</param>
         /// <returns></returns>
-        public static string ToMyCSV(this DataTable table, string delimiter, bool header = true)
+        public static string ToMyCsv(this DataTable table, string delimiter, bool header = true)
         {
             var result = new StringBuilder();
             if (header)

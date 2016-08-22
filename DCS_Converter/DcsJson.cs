@@ -14,7 +14,7 @@ namespace DCS_Converter
     /// This class is used for all JSON related conversion within <c>DCS_Converter</c>
     /// </summary>
     //TODO finish testing
-    public class DCS_JSON
+    public class DcsJson
     {
         //TODO add JSON conversion methods
 
@@ -23,7 +23,7 @@ namespace DCS_Converter
         /// </summary>
         /// <param name="filePath">The FULL path of the JSON file to convert.</param>
         /// <returns>A dynamic object, representing the JSON file.</returns>
-        public static dynamic parseJSON(String filePath)
+        public static dynamic ParseJson(String filePath)
         {
             // read file into a string and deserialize JSON to a type
             try {
@@ -42,7 +42,7 @@ namespace DCS_Converter
         /// </summary>
         /// <param name="obj">The object to write to file.</param>
         /// <param name="filePath">The FULL path of the file to write.</param>
-        public static bool outputJSON(dynamic obj, string filePath, string dateFormat = "ISO", bool stripIndent = false, bool stripNull = true, bool stripNonASCII = false)
+        public static bool OutputJson(dynamic obj, string filePath, string dateFormat = "ISO", bool stripIndent = false, bool stripNull = true, bool stripNonAscii = false)
         {
             try {
                 //Additional options
@@ -52,7 +52,7 @@ namespace DCS_Converter
                 settings.StringEscapeHandling = StringEscapeHandling.Default;
                 if (stripIndent) settings.Formatting = Formatting.None;
                 if (!stripNull) settings.NullValueHandling = NullValueHandling.Include;
-                if (stripNonASCII) settings.StringEscapeHandling = StringEscapeHandling.EscapeNonAscii;
+                if (stripNonAscii) settings.StringEscapeHandling = StringEscapeHandling.EscapeNonAscii;
                 if (dateFormat.ToUpper() == "ISO") settings.DateFormatHandling = DateFormatHandling.IsoDateFormat;
                 else if (dateFormat.ToUpper() == "MICROSOFT") settings.DateFormatHandling = DateFormatHandling.MicrosoftDateFormat;
                 else Console.WriteLine("Unsorported date format, supported formats are ISO and MICROSOFT");

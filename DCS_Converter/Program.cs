@@ -14,7 +14,7 @@ namespace DCS_Converter
 
         [DllImport("kernel32.dll")]
         static extern bool AttachConsole(int dwProcessId);
-        private const int ATTACH_PARENT_PROCESS = -1;
+        private const int AttachParentProcess = -1;
 
         /// <summary>
         /// The class created to receieve parsed values from the CL Parser.
@@ -56,7 +56,7 @@ namespace DCS_Converter
 
             [Option('a', "stripnonascii", Required = false,
               HelpText = "Whether or not to strip non ASCII values in JSON output.")]
-            public bool StripNonASCII { get; set; }
+            public bool StripNonAscii { get; set; }
 
             [Option('f', "dateformat", DefaultValue = "ISO", Required = false,
               HelpText = "Format to be used for dates in JSON (ISO or MICROSOFT).")]
@@ -82,7 +82,7 @@ namespace DCS_Converter
         static void Main(string[] args)
         {
 
-            AttachConsole(ATTACH_PARENT_PROCESS);
+            AttachConsole(AttachParentProcess);
 
             //If no arguments are specified, launch windows form.
             if (args.Length == 0)
@@ -101,11 +101,11 @@ namespace DCS_Converter
                     if (CommandLine.Parser.Default.ParseArguments(args, options))
                     {
                         //Parse files
-                        dynamic parsed = DCS_ALL.parseFile(args[0]);
+                        dynamic parsed = DcsAll.ParseFile(args[0]);
                         if (parsed != null)
                         {
                             //Output file
-                            bool result = customOutputFile(args[1], parsed, options);
+                            bool result = CustomOutputFile(args[1], parsed, options);
                             if (result)
                             {
                                 //Complete
@@ -128,7 +128,7 @@ namespace DCS_Converter
         /// <param name="saveFileName">The full path of the new save file.</param>
         /// <param name="fileType">The file type of the new save file.</param>
         /// <param name="parsed">The parsed content to be output to file.</param>
-        public static bool customOutputFile(string saveFileName, dynamic parsed, Options options)
+        public static bool CustomOutputFile(string saveFileName, dynamic parsed, Options options)
         {
 
             string fileType = null;
@@ -147,7 +147,7 @@ namespace DCS_Converter
             {
                 if (saveFileName != null)
                 {
-                    bool result = DCS_CSV.outputCSV(parsed, saveFileName, options.Header, options.Delimeter, options.Encoding);
+                    bool result = DcsCsv.OutputCsv(parsed, saveFileName, options.Header, options.Delimeter, options.Encoding);
                     return result;
                 }
                 else
@@ -160,8 +160,8 @@ namespace DCS_Converter
             {
                 if (saveFileName != null)
                 {
-                    bool result = DCS_JSON.outputJSON(parsed, saveFileName, options.DateFormat,
-                        options.StripIndent, options.StripNull, options.StripNonASCII);
+                    bool result = DcsJson.OutputJson(parsed, saveFileName, options.DateFormat,
+                        options.StripIndent, options.StripNull, options.StripNonAscii);
                     return result;
                 }
                 else
@@ -174,7 +174,7 @@ namespace DCS_Converter
             {
                 if (saveFileName != null)
                 {
-                    bool result = DCS_XML.outputXML(parsed, saveFileName, options.Root, 
+                    bool result = DcsXml.OutputXml(parsed, saveFileName, options.Root, 
                         options.StripIndent, options.StripNewLine, options.StripDeclaration);
                     return result;
                 }

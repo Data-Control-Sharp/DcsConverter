@@ -17,7 +17,7 @@ namespace DCS_Converter
 {
     public partial class Form1 : Form
     {
-        private string openFileDialogFilter = "All files (*.*)|*.*|CSV File (.csv)|*.csv|JSON File (.json)|*.json|XML File (.xml)|*.xml";
+        private string _openFileDialogFilter = "All files (*.*)|*.*|CSV File (.csv)|*.csv|JSON File (.json)|*.json|XML File (.xml)|*.xml";
 
         /// <summary>
         /// Initializes the form and assigns any default values.
@@ -37,7 +37,7 @@ namespace DCS_Converter
         /// <param name="e">Contains event data.</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            fileBrowser();
+            FileBrowser();
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace DCS_Converter
                 }
 
                 bool outputResult = false;
-                dynamic parsed = DCS_ALL.parseFile(textBox1.Text);
+                dynamic parsed = DcsAll.ParseFile(textBox1.Text);
 
                 //Delete downloaded file
                 if (download)
@@ -97,8 +97,8 @@ namespace DCS_Converter
 
                     //CSV output test
                     saveFileDialog1.Filter = "CSV File (.csv)|*.csv";
-                    string saveFile = saveBrowser();
-                    outputResult = customOutputFile(saveFile, parsed);
+                    string saveFile = SaveBrowser();
+                    outputResult = CustomOutputFile(saveFile, parsed);
                 }
                 //JSON
                 else if (comboBox1.SelectedIndex == 1)
@@ -107,8 +107,8 @@ namespace DCS_Converter
 
                     //JSON output test
                     saveFileDialog1.Filter = "JSON File (.json)|*.json";
-                    string saveFile = saveBrowser();
-                    outputResult = customOutputFile(saveFile, parsed);
+                    string saveFile = SaveBrowser();
+                    outputResult = CustomOutputFile(saveFile, parsed);
                 }
                 //XML
                 else if(comboBox1.SelectedIndex == 2)
@@ -117,8 +117,8 @@ namespace DCS_Converter
 
                     //XML output test
                     saveFileDialog1.Filter = "XML File (.xml)|*.xml";
-                    string saveFile = saveBrowser();
-                    outputResult = customOutputFile(saveFile, parsed);
+                    string saveFile = SaveBrowser();
+                    outputResult = CustomOutputFile(saveFile, parsed);
                 }
                 else
                 {
@@ -129,7 +129,7 @@ namespace DCS_Converter
                 if (outputResult)
                 {
                     DataView dv = new DataView();
-                    DataTable dt = DCS_ALL.objToDataTable(parsed);
+                    DataTable dt = DcsAll.ObjToDataTable(parsed);
                     dv.dataGridView1.DataSource = dt;
                     dv.ShowDialog();
                 }
@@ -157,7 +157,7 @@ namespace DCS_Converter
         /// <param name="saveFileName">The full path of the new save file.</param>
         /// <param name="fileType">The file type of the new save file.</param>
         /// <param name="parsed">The parsed content to be output to file.</param>
-        public bool customOutputFile(string saveFileName, dynamic parsed)
+        public bool CustomOutputFile(string saveFileName, dynamic parsed)
         {
 
             string fileType = null;
@@ -176,7 +176,7 @@ namespace DCS_Converter
             {
                 if (saveFileName != null)
                 {
-                    bool result = DCS_CSV.outputCSV(parsed, saveFileName,
+                    bool result = DcsCsv.OutputCsv(parsed, saveFileName,
                         this.checkBox3.Checked, this.textBox2.Text,
                         this.comboBox2.GetItemText(this.comboBox2.SelectedItem));
                     return result;
@@ -191,7 +191,7 @@ namespace DCS_Converter
             {
                 if (saveFileName != null)
                 {
-                    bool result = DCS_JSON.outputJSON(parsed, saveFileName, this.comboBox3.GetItemText(this.comboBox3.SelectedItem), 
+                    bool result = DcsJson.OutputJson(parsed, saveFileName, this.comboBox3.GetItemText(this.comboBox3.SelectedItem), 
                         this.checkBox6.Checked, this.checkBox5.Checked, this.checkBox7.Checked);
                     return result;
                 }
@@ -205,7 +205,7 @@ namespace DCS_Converter
             {
                 if (saveFileName != null)
                 {
-                    bool result = DCS_XML.outputXML(parsed, saveFileName, this.textBox3.Text,
+                    bool result = DcsXml.OutputXml(parsed, saveFileName, this.textBox3.Text,
                         this.checkBox2.Checked, this.checkBox4.Checked,
                         this.checkBox1.Checked);
                     return result;
@@ -228,7 +228,7 @@ namespace DCS_Converter
         /// The file name is then placed in textBox1.
         /// </summary>
         /// <returns>File name of the selected file.</returns>
-        public string fileBrowser()
+        public string FileBrowser()
         {
             string file = null;
             DialogResult result = openFileDialog1.ShowDialog(); //Show the dialog.
@@ -245,7 +245,7 @@ namespace DCS_Converter
         /// This function displays a file save browser to the user, allowing them to select a file. 
         /// </summary>
         /// <returns>File name of the selected file.</returns>
-        public string saveBrowser()
+        public string SaveBrowser()
         {
             string file = null;
             DialogResult result = saveFileDialog1.ShowDialog(); //Show the dialog.
@@ -266,7 +266,7 @@ namespace DCS_Converter
         private void Form1_Load(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
-            openFileDialog1.Filter = openFileDialogFilter;
+            openFileDialog1.Filter = _openFileDialogFilter;
             saveFileDialog1.FileName = "";
 
             Dictionary<string, string> combo = new Dictionary<string, string>();

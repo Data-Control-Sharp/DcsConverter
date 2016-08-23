@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>DcsConverter.dll</id>
+    <id>DcsConverter</id>
     <version>1.0.0</version>
     <authors>Dylan Barnes, Ryan Kilbride, and Cameron Kerbaugh</authors>
     <owners>Dylan Barnes, Ryan Kilbride, and Cameron Kerbaugh</owners>

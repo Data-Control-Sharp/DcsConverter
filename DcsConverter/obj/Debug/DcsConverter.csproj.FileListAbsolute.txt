@@ -1,0 +1,13 @@
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\obj\Debug\DcsConverter.DataView.resources
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\obj\Debug\DcsConverter.Form1.resources
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\obj\Debug\DcsConverter.Properties.Resources.resources
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\obj\Debug\DcsConverter.csproj.GenerateResource.Cache
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\DcsConverter.pdb
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\CommandLine.dll
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\CommandLine.xml
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\obj\Debug\DcsConverter.pdb
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\DcsConverter.dll.config
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\DcsConverter.dll
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\obj\Debug\DcsConverter.dll

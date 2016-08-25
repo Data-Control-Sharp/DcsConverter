@@ -42,6 +42,10 @@ namespace DcsConverter
         /// </summary>
         /// <param name="obj">The object to write to file.</param>
         /// <param name="filePath">The FULL path of the file to write.</param>
+        /// <param name="dateFormat">The date format. ISO by default.</param>
+        /// <param name="stripIndent">Whether or not to strip indents. False by default.</param>
+        /// <param name="stripNull">Whether or not to strip null values. True by default.</param>
+        /// <param name="stripNonAscii">Whether or not to strip non-ascii values. False by default.</param>
         public static bool OutputJson(dynamic obj, string filePath, string dateFormat = "ISO", bool stripIndent = false, bool stripNull = true, bool stripNonAscii = false)
         {
 

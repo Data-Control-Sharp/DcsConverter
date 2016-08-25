@@ -7,8 +7,17 @@ using System.Threading.Tasks;
 
 namespace DcsConverter
 {
+    /// <summary>
+    /// A class containing extensions to assist in displaying parsed data in a datatable.
+    /// </summary>
     public static class DataTableExtensions
     {
+        /// <summary>
+        /// Takes in a datatable as input, and outputs a CSV file.
+        /// </summary>
+        /// <param name="table">The table to be converted to CSV.</param>
+        /// <param name="delimator">The delimeter used in the CSV file.</param>
+        /// <returns></returns>
         public static string ToCsv(this DataTable table, string delimator)
         {
             var result = new StringBuilder();

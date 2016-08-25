@@ -126,8 +126,9 @@ namespace DcsConverter
         /// This function will take in a dynamic object and output a specified file type.
         /// </summary>
         /// <param name="saveFileName">The full path of the new save file.</param>
-        /// <param name="fileType">The file type of the new save file.</param>
         /// <param name="parsed">The parsed content to be output to file.</param>
+        /// <param name="options">Additional command line options.</param>
+        /// <returns>Whether or not outputing data was successful.</returns>
         public static bool CustomOutputFile(string saveFileName, dynamic parsed, Options options)
         {
 

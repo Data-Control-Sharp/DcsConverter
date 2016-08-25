@@ -11,3 +11,4 @@ C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\obj\Debug\
 C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\DcsConverter.dll.config
 C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\DcsConverter.dll
 C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\obj\Debug\DcsConverter.dll
+C:\Users\dylabar\Source\Repos\DcsConverter\DCS-Converter\DcsConverter\bin\Debug\DcsConverter.XML

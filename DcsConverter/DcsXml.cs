@@ -55,7 +55,7 @@ namespace DcsConverter
         /// <summary>
         /// Loads XML content and converts it to a C# object.
         /// </summary>
-        /// <param name="filePath">The XML string</param>
+        /// <param name="xmlContent">A string containing the XML content to be parsed.</param>
         /// <returns>A dynamic object, representing the XML file.</returns>
         public static dynamic ParseXmlData(String xmlContent)
         {

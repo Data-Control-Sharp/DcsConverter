@@ -54,7 +54,6 @@ namespace DcsConverter
         /// This function will take in a dynamic object and output a specified file type.
         /// </summary>
         /// <param name="saveFileName">The full path of the new save file.</param>
-        /// <param name="fileType">The file type of the new save file.</param>
         /// <param name="parsed">The parsed content to be output to file.</param>
         public static bool OutputFile(string saveFileName, dynamic parsed)
         {
@@ -123,6 +122,11 @@ namespace DcsConverter
         }
 
         //TODO: Include all tables. This is an issue for CSV testing.
+        /// <summary>
+        /// Converts a dynamic object of parsed data into a datatable
+        /// </summary>
+        /// <param name="obj">The dynamic parsed data</param>
+        /// <returns>A datatable containing the parsed data</returns>
         public static DataTable ObjToDataTable(dynamic obj)
         {
             string json = JsonConvert.SerializeObject(obj);//TODO woefully inefficient step here. Converting back to XML to use their convenient methods.  See if we can rework in Newtonsoft.

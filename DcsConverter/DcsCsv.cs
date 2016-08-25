@@ -119,6 +119,9 @@ namespace DcsConverter
         /// </summary>
         /// <param name="obj">The object to write to file.</param>
         /// <param name="filePath">The FULL path of the file to write.</param>
+        /// <param name="header">Whether or not the CSV data contains a header. True by default.</param>
+        /// <param name="delimeter">A specified delimeter to seperate the values. Comma by default.</param>
+        /// <param name="encoding">The specified character encoding. UTF8 by default.</param>
         public static bool OutputCsv(dynamic obj, string filePath, bool header = true, string delimeter = ",", string encoding = "UTF8")
         {
 
@@ -212,6 +215,7 @@ namespace DcsConverter
         /// </summary>
         /// <param name="table">data table</param>
         /// <param name="delimiter">delimiter</param>
+        /// <param name="header">Whether or not the CSV data contains a header. True by default.</param>
         /// <returns></returns>
         public static string ToMyCsv(this DataTable table, string delimiter, bool header = true)
         {

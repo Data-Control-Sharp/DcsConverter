@@ -15,6 +15,9 @@ using System.Xml;
 
 namespace DcsConverter
 {
+    /// <summary>
+    /// A simple GUI to utilize DC# Converter functionality.
+    /// </summary>
     public partial class Form1 : Form
     {
         private string _openFileDialogFilter = "All files (*.*)|*.*|CSV File (.csv)|*.csv|JSON File (.json)|*.json|XML File (.xml)|*.xml";
@@ -155,7 +158,6 @@ namespace DcsConverter
         /// This function will take in a dynamic object and output a specified file type.
         /// </summary>
         /// <param name="saveFileName">The full path of the new save file.</param>
-        /// <param name="fileType">The file type of the new save file.</param>
         /// <param name="parsed">The parsed content to be output to file.</param>
         public bool CustomOutputFile(string saveFileName, dynamic parsed)
         {

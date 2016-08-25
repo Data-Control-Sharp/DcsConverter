@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace DcsConverter
 {
+    /// <summary>
+    /// A data view that appears to display parsed data.
+    /// </summary>
     public partial class DataView : Form
     {
+        /// <summary>
+        /// DataView constructor
+        /// </summary>
         public DataView()
         {
             InitializeComponent();

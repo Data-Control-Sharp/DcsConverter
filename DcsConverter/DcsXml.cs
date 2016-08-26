@@ -1,11 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
 using System.Xml;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-//TODO clean up imports.
 //TODO clean print statements
 //TODO exception handling
 
@@ -24,7 +19,7 @@ namespace DcsConverter
         /// </summary>
         /// <param name="filePath">The FULL path of the file to convert.</param>
         /// <returns>A dynamic object, representing the XML file.</returns>
-        public static dynamic ParseXml(String filePath)
+        public static dynamic ParseXml(string filePath)
         {
             try
             {
@@ -38,7 +33,7 @@ namespace DcsConverter
                         xmlData.RemoveChild(n);
 
                 //Convert to JSON (temporary workaround)
-                String jsonData = JsonConvert.SerializeXmlNode(xmlData);
+                string jsonData = JsonConvert.SerializeXmlNode(xmlData);
 
                 //Convert to Object type
                 return JsonConvert.DeserializeObject(jsonData);
@@ -57,7 +52,7 @@ namespace DcsConverter
         /// </summary>
         /// <param name="xmlContent">A string containing the XML content to be parsed.</param>
         /// <returns>A dynamic object, representing the XML file.</returns>
-        public static dynamic ParseXmlData(String xmlContent)
+        public static dynamic ParseXmlData(string xmlContent)
         {
             try
             {
@@ -71,7 +66,7 @@ namespace DcsConverter
                         xmlData.RemoveChild(n);
 
                 //Convert to JSON (temporary workaround)
-                String jsonData = JsonConvert.SerializeXmlNode(xmlData);
+                string jsonData = JsonConvert.SerializeXmlNode(xmlData);
 
                 //Convert to Object type
                 return JsonConvert.DeserializeObject(jsonData);

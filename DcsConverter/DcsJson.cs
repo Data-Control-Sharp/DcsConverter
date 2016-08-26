@@ -1,11 +1,5 @@
 ﻿using System;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-//TODO make sure only required imports are used
 
 namespace DcsConverter
 {
@@ -23,7 +17,7 @@ namespace DcsConverter
         /// </summary>
         /// <param name="filePath">The FULL path of the JSON file to convert.</param>
         /// <returns>A dynamic object, representing the JSON file.</returns>
-        public static dynamic ParseJson(String filePath)
+        public static dynamic ParseJson(string filePath)
         {
             // read file into a string and deserialize JSON to a type
             try {
@@ -31,6 +25,26 @@ namespace DcsConverter
                 return obj;
             }
             catch(Exception e)
+            {
+                Console.WriteLine("Parsing Error: " + e);
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Loads JSON content and converts it to a C# object.
+        /// </summary>
+        /// <param name="jsonContent">A string containing the JSON content to be parsed.</param>
+        /// <returns>A dynamic object, representing the JSON file.</returns>
+        public static dynamic ParseJsonData(string jsonContent)
+        {
+            // read file into a string and deserialize JSON to a type
+            try
+            {
+                dynamic obj = JsonConvert.DeserializeObject(jsonContent);
+                return obj;
+            }
+            catch (Exception e)
             {
                 Console.WriteLine("Parsing Error: " + e);
                 return null;

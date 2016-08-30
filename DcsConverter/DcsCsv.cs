@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Newtonsoft.Json.Linq;
 using System.Text;
 using System.IO;
 using System.Web.Script.Serialization;
@@ -83,6 +82,47 @@ namespace DcsConverter
 
             //*///  Better JSON IMPLEMENTATION?
 
+        }
+
+        /// <summary>
+        /// Loads CSV content and converts it to a C# object.
+        /// </summary>
+        /// <param name="csvContent">A string containing the CSV content to be parsed.</param>
+        /// <returns>A dynamic object, representing the v file.</returns>
+        public static dynamic ParseCsvData(string csvContent)
+        {
+            //TODO: Create more specific try/catch blocks.
+            try
+            {
+                //*///  WIP XML/JSON IMPLEMENTATION
+                char delimiter = ',';
+                //TODO: Add support for single-quote, only works for double quotes currently.
+                string pattern = delimiter + "(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)";
+                string[] csvLines = csvContent.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries); //TODO catch IO errors
+                Dictionary<string, Dictionary<string, string>> rootDict =
+                    new Dictionary<string, Dictionary<string, string>>();
+
+                //I am treating the first line as the fields and every subsequent line afterwards as data
+                //string[] line, header = csvLines[0].Split(delimiter);//TODO generalize for no header case?
+                string[] line, header = Regex.Split(csvLines[0], pattern);
+                for (int i = 1; i < csvLines.Length; i++)
+                {
+                    //line = csvLines[i].Split(delimiter);
+                    line = Regex.Split(csvLines[i], pattern);
+                    Dictionary<string, string> inner = new Dictionary<string, string>();
+
+                    for (int j = 0; j < line.Length; j++)
+                        inner.Add(header[j], line[j]);
+
+                    rootDict.Add("Row" + i, inner);
+                }
+                return rootDict;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Parsing Error: " + e);
+                return null;
+            }
         }
 
         /// <summary>

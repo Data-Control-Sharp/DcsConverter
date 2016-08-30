@@ -98,7 +98,7 @@ namespace DcsConverter
                 char delimiter = ',';
                 //TODO: Add support for single-quote, only works for double quotes currently.
                 string pattern = delimiter + "(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)";
-                string[] csvLines = csvContent.Split(new string[] { Environment.NewLine }, StringSplitOptions.None); //TODO catch IO errors
+                string[] csvLines = csvContent.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries); //TODO catch IO errors
                 Dictionary<string, Dictionary<string, string>> rootDict =
                     new Dictionary<string, Dictionary<string, string>>();
 

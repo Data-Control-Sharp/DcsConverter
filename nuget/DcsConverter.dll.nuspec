@@ -2,17 +2,18 @@
 <package >
   <metadata>
     <id>DcsConverter</id>
-    <version>1.0.0</version>
-    <authors>Dylan Barnes, Ryan Kilbride, and Cameron Kerbaugh</authors>
-    <owners>Dylan Barnes, Ryan Kilbride, and Cameron Kerbaugh</owners>
+	<title>DC# Converter</title>
+    <version>1.0.1</version>
+    <authors>Dylan Barnes, Ryan Kilbride, Cameron Kerbaugh</authors>
+    <owners>Dylan Barnes, Ryan Kilbride, Cameron Kerbaugh</owners>
     <licenseUrl>https://github.com/Data-Control-Sharp/DCS-Converter/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Data-Control-Sharp/DCS-Converter</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/Data-Control-Sharp/DCS-Converter/master/DCS_Converter/Resources/DCS%20Logo%20Small.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DC# Converter is a portable, multi-function conversion tool.</description>
-    <releaseNotes>Initial Release</releaseNotes>
+    <releaseNotes>Streamlined functionality by removing unnecessary interface support. Added support for directly parsing strings.</releaseNotes>
     <copyright>Copyright 2016</copyright>
-    <tags>CSV, JSON, XML</tags>
+    <tags>CSV, JSON, XML, Convert, Parse, Output</tags>
     <dependencies>
       <dependency id="Newtonsoft.Json" version="9.0.1" />
     </dependencies>
